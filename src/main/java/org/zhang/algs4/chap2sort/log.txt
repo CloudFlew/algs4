@@ -1,0 +1,53 @@
+
+2016-01-01T01:02:17.696
+备注: 快排sort3：小数组(size<8)切换插入排序。sort4：三取样切分，即从子数组取三个值中的中位数来切分数组
+QuickSort.sort: 4.112s	QuickSort.sort3: 3.697s	QuickSort.sort4: 3.719s	size: 8000000	比值： 1.00:0.90:0.90
+QuickSort.sort: 3.967s	QuickSort.sort3: 3.602s	QuickSort.sort4: 3.593s	size: 8000000	比值： 1.00:0.91:0.91
+QuickSort.sort: 3.991s	QuickSort.sort3: 3.6s	QuickSort.sort4: 3.61s	size: 8000000	比值： 1.00:0.90:0.90
+QuickSort.sort: 3.989s	QuickSort.sort3: 3.58s	QuickSort.sort4: 3.626s	size: 8000000	比值： 1.00:0.90:0.91
+QuickSort.sort: 4.003s	QuickSort.sort3: 3.582s	QuickSort.sort4: 3.642s	size: 8000000	比值： 1.00:0.89:0.91
+
+2016-01-01T01:18:32.162
+备注: 快排sort2:设置哨兵，去掉内循环的比较。
+QuickSort.sort: 11.805s	QuickSort.sort2: 11.335s	QuickSort.sort: 11.649s	size: 20000000	比值： 1.00:0.96:0.99
+QuickSort.sort: 11.536s	QuickSort.sort2: 11.178s	QuickSort.sort: 11.748s	size: 20000000	比值： 1.00:0.97:1.02
+QuickSort.sort: 11.522s	QuickSort.sort2: 11.286s	QuickSort.sort: 11.564s	size: 20000000	比值： 1.00:0.98:1.00
+QuickSort.sort: 11.719s	QuickSort.sort2: 11.36s	    QuickSort.sort: 11.755s	size: 20000000	比值： 1.00:0.97:1.00
+QuickSort.sort: 11.596s	QuickSort.sort2: 11.456s	QuickSort.sort: 11.638s	size: 20000000	比值： 1.00:0.99:1.00
+
+2016-01-01T18:15:55.964
+备注: loopSort：快排的非递归实现 --!
+PS：忘记终止循环了。
+QuickSort.sort: 0.032s	QuickSort.loopSort: 5.696s	size: 50000	比值： 1.00:178.00
+QuickSort.sort: 0.009s	QuickSort.loopSort: 5.567s	size: 50000	比值： 1.00:618.56
+QuickSort.sort: 0.009s	QuickSort.loopSort: 3.807s	size: 50000	比值： 1.00:423.00
+QuickSort.sort: 0.011s	QuickSort.loopSort: 3.827s	size: 50000	比值： 1.00:347.91
+QuickSort.sort: 0.009s	QuickSort.loopSort: 3.811s	size: 50000	比值： 1.00:423.44
+
+2016-01-01T18:38:40.153
+备注: 快排
+sort:普通快排。
+sort2：哨兵。
+sort3：小数组(M<14)切换为插入排序。
+sort4：三取样切分。
+sort5：综合哨兵，三取样，插入排序。
+loopSort:快排的非递归实现,偶尔出现运行时间是正常的2倍，不知道为什么。
+QuickSort.sort: 12.683s	QuickSort.sort2: 11.973s	QuickSort.sort3: 11.603s	QuickSort.sort4: 11.459s	QuickSort.sort5: 10.761s	QuickSort.loopSort: 17.49s	size: 20000000	比值： 1.00:0.94:0.91:0.90:0.85:1.38	
+QuickSort.sort: 12.814s	QuickSort.sort2: 12.146s	QuickSort.sort3: 11.907s	QuickSort.sort4: 11.564s	QuickSort.sort5: 10.865s	QuickSort.loopSort: 15.203s	size: 20000000	比值： 1.00:0.95:0.93:0.90:0.85:1.19	
+QuickSort.sort: 12.678s	QuickSort.sort2: 12.396s	QuickSort.sort3: 11.866s	QuickSort.sort4: 11.794s	QuickSort.sort5: 11.025s	QuickSort.loopSort: 12.015s	size: 20000000	比值： 1.00:0.98:0.94:0.93:0.87:0.95	
+QuickSort.sort: 13.261s	QuickSort.sort2: 11.794s	QuickSort.sort3: 11.481s	QuickSort.sort4: 11.606s	QuickSort.sort5: 10.911s	QuickSort.loopSort: 11.742s	size: 20000000	比值： 1.00:0.89:0.87:0.88:0.82:0.89	
+QuickSort.sort: 12.67s	QuickSort.sort2: 12.035s	QuickSort.sort3: 11.637s	QuickSort.sort4: 11.827s	QuickSort.sort5: 10.906s	QuickSort.loopSort: 12.058s	size: 20000000	比值： 1.00:0.95:0.92:0.93:0.86:0.95
+
+2016-01-01T18:57:24.455
+备注: 同上。size=4000 0000
+QuickSort.sort: 29.722s	QuickSort.sort2: 28.398s	QuickSort.sort3: 27.829s	QuickSort.sort4: 27.884s	QuickSort.sort5: 25.384s	QuickSort.loopSort: 41.273s	size: 40000000	比值： 1.00:0.96:0.94:0.94:0.85:1.39	
+QuickSort.sort: 29.449s	QuickSort.sort2: 29.01s	 	QuickSort.sort3: 27.172s	QuickSort.sort4: 27.297s	QuickSort.sort5: 25.127s	QuickSort.loopSort: 44.899s	size: 40000000	比值： 1.00:0.99:0.92:0.93:0.85:1.52	
+QuickSort.sort: 29.579s	QuickSort.sort2: 28.728s	QuickSort.sort3: 27.584s	QuickSort.sort4: 27.426s	QuickSort.sort5: 25.148s	QuickSort.loopSort: 46.055s	size: 40000000	比值： 1.00:0.97:0.93:0.93:0.85:1.56	
+QuickSort.sort: 29.538s	QuickSort.sort2: 28.886s	QuickSort.sort3: 29.325s	QuickSort.sort4: 27.539s	QuickSort.sort5: 25.636s	QuickSort.loopSort: 48.255s	size: 40000000	比值： 1.00:0.98:0.99:0.93:0.87:1.63	
+
+2016-01-03T00:21:47.773
+备注: 快排和归并
+QuickSort.sort: 12.79s	MergeSort.sort: 4.1s	size: 20000000	比值： 1.00:0.32	
+QuickSort.sort: 12.628s	MergeSort.sort: 3.923s	size: 20000000	比值： 1.00:0.31	
+QuickSort.sort: 12.699s	MergeSort.sort: 3.938s	size: 20000000	比值： 1.00:0.31	
+
