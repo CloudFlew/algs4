@@ -29,10 +29,14 @@ public class MergeSort {
 			b[k]=a[k];
 		}
 		for(int k=lo;k<hi+1;k++){
-			if(i>mid) 				 a[k]=a[j++];
-			else if(j>hi)			 a[k]=a[i++];
-			else if(less(a[i],a[j])) a[k]=a[i++];
-			else					 a[k]=a[j++];
+			if(i>mid) 
+				a[k]=a[j++];
+			else if(j>hi)			 
+				a[k]=a[i++];
+			else if(less(a[i],a[j])) 
+				a[k]=a[i++];
+			else					 
+				a[k]=a[j++];
 		}
 	}
 
