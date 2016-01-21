@@ -1,4 +1,4 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
 /**归并排序
  * @author zhang

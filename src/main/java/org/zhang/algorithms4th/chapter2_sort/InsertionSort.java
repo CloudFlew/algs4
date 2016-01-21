@@ -1,6 +1,6 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
-import static org.zhang.algs4.chap2sort.TemplateSort.*;
+import static org.zhang.algorithms4th.chapter2_sort.TemplateSort.*;
 
 import java.lang.reflect.Method;
 
@@ -26,7 +26,7 @@ public class InsertionSort {
 		}
 	}
 
-	// 重复运行时，第三次以后用时明显减少1/3，可能是java缓存了Double对象t和m。
+	// 重复运行时，第三次以后用时明显减少1/3，可能是java缓存了Double对象t和m(并不确定)。
 	@SuppressWarnings("rawtypes")
 	public static void sort3(Comparable<?>[] a) {
 		Comparable t;

@@ -1,4 +1,4 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
 import java.io.File;
 import java.io.IOException;

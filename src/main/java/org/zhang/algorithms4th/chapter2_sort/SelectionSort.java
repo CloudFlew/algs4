@@ -1,6 +1,6 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
-import static org.zhang.algs4.chap2sort.TemplateSort.*;
+import static org.zhang.algorithms4th.chapter2_sort.TemplateSort.*;
 
 //import edu.princeton.cs.algs4.In;
 

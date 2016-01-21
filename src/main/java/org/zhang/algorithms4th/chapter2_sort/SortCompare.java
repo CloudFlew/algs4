@@ -1,4 +1,4 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.time.LocalDateTime;
 
 /**
- * 用来比较排序算法的性能
+ * 用来测试排序算法的性能
  * 
  * @author cloud
  *
@@ -17,11 +17,11 @@ public class SortCompare {
 
 	
 	/**比较不同排序算法的运行时间
-	 * @param args 算法类及其方法组成的数组， 格式：{ "ShellSort", "sort", "QuickSort", "sort" , ...}
+	 * @param args 算法类及其方法组成的数组， 格式：{ "ShellSort", "sort", "QuickSort", "sort5" , "ShellSort",...}
 	 * @param size 排序数组的大小
 	 * @param count 重复运行次数
 	 * @param remark 对本次测试的备注
-	 * @return 本次测试的信息，包括时间、备注、算法名称及其运行时间，以备分析或保存の用
+	 * @return String 本次测试的全部信息，包括时间、备注、算法名称及其运行时间，以备分析或保存の用
 	 * @throws Exception
 	 */
 	@SuppressWarnings("rawtypes")
@@ -65,7 +65,7 @@ public class SortCompare {
 		return sb.toString();
 	}
 
-	/**将运行数据(String)保存到txt文件中,(不再使用,改为存到 excel 中)
+	/**将运行数据(String)保存到txt文件中,(不再使用,改为存到 excel 中,见 Utils 类)
 	 * @param s
 	 * @throws IOException
 	 */

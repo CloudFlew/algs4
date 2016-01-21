@@ -1,14 +1,19 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.otherAlgorithms;
 
 import java.util.*;
 
 /**LeetCode算法题:一个数组中每个数字都出现两次，只有一个出现一次，请找出它来。
- * 第一种方法利用递归,类似二分查找,算法复杂度O(N).第二种是网上找到,用的异或,速度略快一点.
+ * 第一种方法利用二分法,消耗时间 O(N).第二种是网上找到的,用的异或,消耗时间 O(N),速度略快一点.
  * @author cloud
  *
  */
 public class SingleNumber {
 
+	
+	/**运用异或的方法
+	 * @param nums
+	 * @return
+	 */
 	public int singleNumber2(int[] nums) {
 		int x=0;
 		for(int a:nums){
@@ -23,6 +28,10 @@ public class SingleNumber {
 //	static int count;//元素总的比较次数---O(n)
 //	static int count2;//总的交换次数---O(n)
 	
+	/**运用二分法
+	 * @param nums
+	 * @return
+	 */
 	public int singleNumber(int[] nums) {
 		random = new Random();
 		find(nums, 0, nums.length - 1);
@@ -68,20 +77,26 @@ public class SingleNumber {
 	}
 
 	public static void main(String[] args) {
+		
+		//构造一个符合要求的集合
 		Random rd = new Random();
 		HashSet<Integer> h = new HashSet<>();
 		while (true) {
-			h.add(rd.nextInt());
+			h.add(rd.nextInt());//使用随机数填充 Set
 			if (h.size() == 10000000)
 				break;
 		}
 		List<Integer> l = new ArrayList<>();
 		l.addAll(h);
 		l.addAll(h);
+		int bingo = l.get(19999999);//出现一次的数
+		Collections.shuffle(l);//打乱 List
 		int[] a = new int[19999999];
 		for (int i = 0; i < a.length; i++) {
-			a[i] = l.get(i);
+			a[i] = l.get(i);//填充 数组
 		}
+		
+		
 		SingleNumber s = new SingleNumber();
 		for (int i = 0; i < 5; i++) {
 			int[] b=a.clone();
@@ -96,7 +111,7 @@ public class SingleNumber {
 			long end2 = System.currentTimeMillis();
 			double time = (end - st) / 1000.0;
 			double time2 = (end2 - st2) / 1000.0;
-			 System.out.println("expect" + l.get(19999999) + " return:" + rs + rs2 +
+			 System.out.println("expect: " + bingo + "  return:" + rs + rs2 +
 			 " time:" + time +" time2: "+time2);
 		}
 	}

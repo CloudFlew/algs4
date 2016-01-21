@@ -1,6 +1,6 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
-import static org.zhang.algs4.chap2sort.TemplateSort.*;
+import static org.zhang.algorithms4th.chapter2_sort.TemplateSort.*;
 /**希尔排序
  * @author zhang
  *
@@ -21,7 +21,7 @@ public class ShellSort {
 		}
 	}
 	
-	/**一个乘方函数  a的b次方，b>0
+	/**一个乘方函数:  a的b次方，b>0
 	 * @param a 底数
 	 * @param b 指数
 	 * @return a的b次方

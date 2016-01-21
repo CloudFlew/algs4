@@ -1,4 +1,4 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
 import java.util.Stack;
 
@@ -14,7 +14,7 @@ public class QuickSort {
 		System.out.println(isSorted(a));
 	}
 
-	/**快排的非递归实现
+	/**快排的非递归实现,需要维护一个额外的 栈 Stack.
 	 * @param a
 	 */
 	public static void loopSort(Comparable[] a){

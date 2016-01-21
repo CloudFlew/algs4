@@ -1,4 +1,4 @@
-package org.zhang.algs4.chap2sort;
+package org.zhang.algorithms4th.chapter2_sort;
 
 /*一个模版类，提供比较，交换元素等静态方法，其他sort类可以静态导入*/
  public class TemplateSort {
