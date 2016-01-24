@@ -1,4 +1,4 @@
-package org.zhang.otherAlgorithms;
+package org.zhang.Other;
 
 /**
  *  斐波那契数列的非递归实现

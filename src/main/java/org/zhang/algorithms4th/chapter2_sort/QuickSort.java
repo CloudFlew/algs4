@@ -60,7 +60,7 @@ public class QuickSort {
 		}
 	}
 	
-	/**快排的递归实现，sort2/3/4/5是对此实现的优化
+	/**快排的递归实现，sort2/3/4/5是对此实现的优化. !!! 数组未打乱,回头改!!!
 	 * @param a
 	 */
 	public static void sort(Comparable[] a) {

@@ -1,4 +1,4 @@
-package org.zhang.otherAlgorithms;
+package org.zhang.leetCode;
 
 import java.util.*;
 
