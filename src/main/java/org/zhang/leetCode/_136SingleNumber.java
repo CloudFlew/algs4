@@ -7,7 +7,7 @@ import java.util.*;
  * @author cloud
  *
  */
-public class SingleNumber {
+public class _136SingleNumber {
 
 	
 	/**运用异或的方法
@@ -97,7 +97,7 @@ public class SingleNumber {
 		}
 		
 		
-		SingleNumber s = new SingleNumber();
+		_136SingleNumber s = new _136SingleNumber();
 		for (int i = 0; i < 5; i++) {
 			int[] b=a.clone();
 			int[] c=a.clone();

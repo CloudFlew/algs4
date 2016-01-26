@@ -1,6 +1,7 @@
 package org.zhang.leetCode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 
@@ -13,7 +14,7 @@ import java.util.Random;
  * 当重复的数字出现在数组前端时,方法2超级快.方法1则比较稳定
  * @author zhang
  */
-public class ContainsDuplicate_No217 {
+public class _217ContainsDuplicate {
 	
 	static class Node{
 		final int value;
@@ -159,7 +160,7 @@ public class ContainsDuplicate_No217 {
 		System.out.println(list.get(500));
 //		int[] nums={4,14,24,34,44,54,64,74,84,94,11,21,31,22,32,42,33,43,53,94};
 		long st=System.currentTimeMillis();
-		System.out.println(new ContainsDuplicate_No217().containsDuplicate(nums));
+		System.out.println(new _217ContainsDuplicate().containsDuplicate(nums));
 		long en=System.currentTimeMillis();
 		System.out.println((en-st)/1000.0);
 //		set.clear();
