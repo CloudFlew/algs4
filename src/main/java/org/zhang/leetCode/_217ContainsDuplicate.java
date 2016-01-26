@@ -9,8 +9,8 @@ import java.util.Random;
  * Given an array of integers, find if the array contains any duplicates. Your
  * function should return true if any value appears at least twice in the array,
  * and it should return false if every element is distinct. 看数组中是否存在重复的数.
- * 方法1:可以使用二分法,在排序的同时,寻找重复的数. 复杂度 2n~5n.
- * 方法2:构造链表数组,类似于 HashSet.复杂度 n.主要时间花费在构造 Node 对象上
+ * 方法1:可以使用二分法,在排序的同时,寻找重复的数. 
+ * 方法2:构造链表数组,类似于 HashSet.主要时间花费在构造 Node 对象上
  * 当重复的数字出现在数组前端时,方法2超级快.方法1则比较稳定
  * @author zhang
  */
@@ -60,7 +60,7 @@ public class _217ContainsDuplicate {
 		return flag;
 	}
 	
-
+//------------------以下为方法2---------------------
 	static boolean flag;
 
 	public boolean containsDuplicate2(int[] nums) {
@@ -151,7 +151,7 @@ public class _217ContainsDuplicate {
 		for (int i=0;i<list.size();i++) {
 			nums[i]=list.get(i);
 		}
-		nums[list.size()]=list.get(500);
+		nums[list.size()]=list.get(500);//生成了一个含有一对重复数字的数组
 		
 		int temp=nums[501];
 		nums[501]=nums[list.size()];

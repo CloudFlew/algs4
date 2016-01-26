@@ -22,11 +22,9 @@ public class _136SingleNumber {
 		return x;
 	}
 
-	
+//------------方法2-------------------------------------	
 	Random random;
 	int bingo;
-//	static int count;//元素总的比较次数---O(n)
-//	static int count2;//总的交换次数---O(n)
 	
 	/**运用二分法
 	 * @param nums
@@ -35,9 +33,6 @@ public class _136SingleNumber {
 	public int singleNumber(int[] nums) {
 		random = new Random();
 		find(nums, 0, nums.length - 1);
-//		System.out.println("count:"+count+"count2:"+count2);
-//		count=0;
-//		count2=0;
 		return bingo; 
 	}
 
@@ -53,9 +48,7 @@ public class _136SingleNumber {
 		int j = hi + 1;
 		while (true) {
 			while (mid > a[++i])
-//				count2++;
 			while (a[--j] >= mid)
-//				count2++;
 				if (j == lo)
 					break;
 			if (i >= j)
@@ -63,14 +56,12 @@ public class _136SingleNumber {
 			int temp = a[i];
 			a[i] = a[j];
 			a[j] = temp;
-//			count++;
 		}
 		if (j < i) {
 			if (((j - lo) & 1) == 0)
 				find(a, lo, j);
 			else
 				find(a, j + 1, hi);
-
 		} else {
 			find(a, lo, hi);
 		}
